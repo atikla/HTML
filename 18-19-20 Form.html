@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="descroption" content="Html for Beginner">
+		<title>Form</title>
+		<link rel="styles" href="style.css">
+		<script>
+			function sayhello()
+			{
+				alert("Hello javaScript");
+			}
+		</script>
+		<style>
+		fieldset {background:#EFEFEF;padding:10px;border:1px solid#CCC;margin-bottom:20px}
+		legend{background:#FFF;border:1px solid #CCC;padding:5px}
+		select {padding:7px;padding-right:20px}
+		</style> 
+	</head>
+	<body>
+		<!--  this is the form attr action="post.php" method="post" -->
+		<form name="register">
+
+			<fieldset>
+				<legend>Personal Informations</legend>
+				<label>Username</label>
+				<input type="text" name="username" value="" placeholder="Type Your Name" maxlength="10"><!--type = -->
+				<br>
+
+				<label>Password</label>
+				<input type="password" name="password">
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend>Your Message</legend>
+				<textarea rows="6" cols="50" readonly="">Your Name : </textarea>
+				<br>
+				<label >Uplode your CV </label> 
+				<input type="file">
+
+		 	</fieldset>
+
+			<br>
+
+			<fieldset>	
+
+			<legend>Your Favourite</legend>		
+				<input type="checkbox">
+				<label> remember me </label>
+				<br>
+				<label>Choose Your Browser</label><br>
+				<input type="radio" name="browser" value="Chrome">Google Chrome<br>
+				<input type="radio" name="browser" value="Firefox">Mozilla Firefox<br>
+				<input type="radio" name="browser" value="Opera">Opera
+				<br>
+
+				<label>Choose Your Mobile</label><br>
+				<input type="radio" name="mobile" value="Iphone">Iphone<br>
+				<input type="radio" name="mobile" value="Samsung">Samsung<br>
+				<input type="radio" name="mobile" value="Nokia">Nokia
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+
+				<legend>Send Options</legend>
+				<select name="Time">
+					<optgroup label="one" disabled>
+						<option disabled value="1">Now</option>
+						<option  value="2">Tomorrow</option>
+						<option value="3">After A Week</option>
+					</optgroup>
+					<optgroup label="tow">
+						<option value="4">month</option>
+						<option selected value="5">one year</option>
+						<option value="6">10 year</option>
+					</optgroup>
+					
+				</select>
+
+				<input type="hidden" value="test">
+
+
+				<br>
+
+				<input type="button" name="Say Hello" value="Say Hello" onclick="sayhello()">
+				<!-- using with javascript and show an alert -->
+
+				<input type="submit" value="SingUp">
+				<!-- using with baack-end to sent an information to web server ana reciving data from web server -->
+
+				<input type="reset" value="restore Default">
+			
+			</fieldset>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<input type="image" src="http://placehold.it/100/100" alt="submit">
+		</form>
+	</body>
+</html>

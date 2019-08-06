@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="descroption" content="Html for Beginner">
+		<title>Form</title>
+		<link rel="styles" href="style.css">
+		<script>
+		</script>
+		<style>
+		body
+		{
+			background:#EFEFEF;font-family:Arial,Tahoma;
+		}
+
+		fieldset
+		{
+			background:#FFF;
+			border:1px solid #CCC;
+			padding:20px;
+			width:500px;
+			margin:40px auto
+		}
+
+		legend
+		{
+			background:#FFF;
+			border:2px solid #DDD;
+			padding:10px;
+		}
+
+		label
+		{
+			margin-bottom: 10px;display:block;
+		}
+
+		input 
+		{
+			margin-bottom:10px;
+		}
+
+		input[type="text"],
+		input[type="password"]
+		{
+			padding:8px;
+			width:300px;
+			display:block;}
+		hr{border:1px solid #EEE;width:100px;}
+		textarea
+		{
+			padding:10px;
+			width:400px;
+			height:200px; 
+			margin-bottom: 10px;
+		}
+		</style> 
+	</head>
+	<body>
+		<form name="register">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>UserName</label>
+				<input type="text" name="username">
+				<label>Password</label>
+				<input type="password" name="password">
+				<label>Email</label>
+				<input type="text" name="email">
+				<label>Gender</label>
+				<select name="gender">
+					<option name=male selected="">Male</option>
+					<option name=fmale>Fmale</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Your Favourites</legend>
+				<label>Your Favourites Text Editor</label>
+				<input type="radio" name="editor">komodoEdit<br>
+				<input type="radio" name="editor">netbeans<br>
+				<input type="radio" name="editor">sublimeText<br>
+				<hr>
+				<label>Your Favourites Browser</label>
+				<input type="radio" name="Browser">Goolge Chrome<br>
+				<input type="radio" name="Browser">Mozila Firefox<br>
+				<input type="radio" name="Browser">Opera<br>
+				<hr>
+				<label>Your Favourites Operating System</label>
+				<input type="checkbox" name="OS">Mac OSX<br>
+				<input type="checkbox" name="OS">Linux<br>
+				<input type="checkbox" name="OS">Windows<br>
+			</fieldset>
+			<fieldset>
+				<legend>Your Message</legend>
+				<textarea></textarea><br>
+				<input type="submit" value="send your Data">
+
+			</fieldset>
+	</body>
+</html>
